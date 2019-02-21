@@ -12,15 +12,35 @@ html {
     background-position: center;
     width: 100vw;
     height: 100vh;
+    color: #BC8B0F;
+    font-family: niagara-engraved, sans-serif;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-color: rgba(60, 60, 60, 0.4);
+    background-color: rgba(2, 2, 2, 0.2);
     height: 100%;
     width: 100%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: niagara-engraved, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    font-family: expo-serif-pro, serif;
+    margin: 2rem 0.5rem;
+}
+
+
 
 a,
 a:visited {
@@ -33,17 +53,12 @@ a:visited {
 .everythingWrapper {
     grid-template-areas:
         "head"
-        "nav"
         "main"
         "foot";
 }
 
 header {
     grid-area: head;
-}
-
-.notMobileNav {
-    grid-area: nav;
 }
 
 main {
@@ -54,17 +69,32 @@ footer {
     grid-area: foot;
 }
 
+
+.notMobileNav {
+    display: block;
+}
+
+.yesMobileNav {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .notMobileNav {
         display: none;
     }
+
+    .yesMobileNav {
+        display: block;
+    }
 }
 
 /***** header ************/
+header {
+    height: 100vh;
+}
+
 .header {
-    grid-column: 1/6;
-    grid-row: 1/2;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(2, 2, 2, 0.6);
     font-size: 30px;
     width: 100vw;
     height: auto;
@@ -95,9 +125,138 @@ footer {
 }
 
 body.gradientBody {
-    background-color: rgba(2, 2, 2, 0.75);
+    background-color: rgba(2, 2, 2, 0.6);
 }
 
 .dropdownItems li p {
     padding-left: 3rem;
+}
+
+/************** CONTENT WRAPPER ***************/
+main {
+    background-color: #26384A;
+    padding-bottom: 3rem;
+}
+
+h4 {
+    font-size: 35pt;
+    margin: 1rem;
+}
+
+/* menu navigation */
+.yesMobileNav h3,
+.notMobileNav h3 {
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+.yesMobileNav {
+    color: #BC8B0F;
+    font-family: niagara-engraved, sans-serif;
+    font-size: 35pt;
+}
+
+.yesMobileNav p {
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.yesMobileNav .tallerken {
+    width: 70px;
+    margin: 1rem auto 1.5rem auto;
+    display: block;
+
+}
+
+.yesMobileNav .menuKnap {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px dashed #BC8B0F;
+    padding: 5px;
+}
+
+.yesMobileNav .menuBorderInner {
+    border: 1px dashed #BC8B0F;
+    padding: 1px;
+}
+
+
+.notMobileNav {
+    color: #BC8B0F;
+    font-family: niagara-engraved, sans-serif;
+    font-size: 35pt;
+}
+
+.notMobileNav p {
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.notMobileNav .tallerken {
+    width: 70px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.notMobileNav .menuKnap {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px dashed #BC8B0F;
+    padding: 5px;
+}
+
+.notMobileNav .menuBorderInner {
+    border: 1px dashed #BC8B0F;
+    padding: 7px;
+
+    display: grid;
+    grid-template-areas: "a a a";
+}
+
+.notMobileNav .menuBorderInner a:nth-of-type(1),
+.notMobileNav .menuBorderInner a:nth-of-type(2) {
+    border-right: 1px solid #BC8B0F;
+}
+
+/* main content */
+@media screen and (max-width: 768px) {
+    .contentWrapper {
+        display: grid;
+        grid-template-areas: "a b a";
+        margin: 2rem 1.5rem;
+    }
+
+    .contentWrapper .contentRow {
+        border: 3px dashed #BC8B0F;
+        padding: 5px;
+    }
+
+    .contentWrapper .innerBorder {
+        border: 1px dashed #BC8B0F;
+        padding: 1rem;
+    }
+
+    .socialIcons {
+        display: block;
+        margin: -1rem 0 0rem 9rem;
+    }
+
+    .reservationsKnap {
+        width: 200px;
+        margin: 2rem auto;
+        text-align: center;
+        border: 3px dashed #BC8B0F;
+        padding: 5px;
+        display: block;
+        font-size: 35pt;
+    }
+
+    .reservationsKnap .innerBorder {
+        border: 1px dashed #BC8B0F;
+        padding: 1px;
+    }
 }
