@@ -1,0 +1,65 @@
+html {
+    background-color: #26384A;
+    background-size: cover;
+    background-image: url(billeder/large-gastro-food.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* NAVBAR CLASSES **/
+body.gradientBody {
+    background:
+}
+
+.hamburgerIcon,
+.hamburgerIcon:after,
+.hamburgerIcon:before {
+    cursor: pointer;
+    width: 2rem;
+    height: 0.33rem;
+    background-color: #BC8B0F;
+    margin-top: 6rem;
+    margin-left: 19.5rem;
+}
+
+.hamburgerIcon:after,
+.hamburgerIcon:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    margin-top: -0.66rem;
+    margin-left: 0.33rem;
+}
+
+.hamburgerIcon:before {
+    margin-top: 0.66rem;
+    margin-left: -0.33rem;
+}
+
+/* DROPDOWN MENU */
+.dropdownItems {
+    margin-top: 3.3rem;
+    margin-left: 1em;
+    display: none;
+    list-style: none;
+}
+
+.dropdownItems li p {
+    padding-left: 3rem;
+}
+
+@media(min-width: 525px) {
+    .dropdownItems {
+        font-size: 1.2rem;
+    }
+}
+
+ul li:first-of-type {
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
