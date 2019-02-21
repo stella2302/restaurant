@@ -29,8 +29,8 @@ body {
 }
 
 .burgerIcon {
-    margin-left: 21rem;
-    padding-top: 6rem;
+    margin-left: 20.5rem;
+    padding-top: 7rem;
 }
 
 .logo {
@@ -39,7 +39,6 @@ body {
     width: 50vw;
     height: 21vh;
     margin-left: 5.5rem;
-
 }
 
 
@@ -50,6 +49,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 10px;
     grid-row: 6/6;
-    background-color: aqua;
-    margin-top: 83.5vh;
+    background-color: #26384A;
+    margin-top: 77.5vh;
+}
+
+.introTxt {
+    font-family: niagara, serif;
+    font-size: 35pt;
+    color: #BC8B0F;
+    width: 100vw;
 }
