@@ -1,9 +1,15 @@
 /*************ROOT STUFF****************/
+html,
+body {
+    overflow-x: hidden;
+}
+
 html {
     background-color: #26384A;
     background-size: cover;
     background-image: url(billeder/large-gastro-food.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
@@ -16,6 +22,44 @@ body {
     width: 100%;
 }
 
+a,
+a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #BC8B0F;
+}
+
+/***** site grid *********/
+.everythingWrapper {
+    grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot";
+}
+
+header {
+    grid-area: head;
+}
+
+.notMobileNav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
+
+@media screen and (max-width: 768px) {
+    .notMobileNav {
+        display: none;
+    }
+}
+
 /***** header ************/
 .header {
     grid-column: 1/6;
@@ -23,32 +67,31 @@ body {
     background: rgba(0, 0, 0, 0.4);
     font-size: 30px;
     width: 100vw;
-    height: 40vw;
+    height: auto;
+    padding: 1rem 0;
 }
 
 .burgerIcon {
-    margin-left: 21rem;
-    padding-top: 7.3rem;
+    display: block;
+    margin: 0 1rem 0 auto;
 }
 
 .logo {
     width: 60vw;
     height: 21vh;
-    margin-left: 5rem;
-    position: absolute;
+    margin: 0 auto -0.5rem auto;
+    display: block;
 }
 
 /*********DROPDOWN MENU***********/
 .dropdownItems {
-    margin-top: 3.3rem;
-    margin-left: 1em;
     display: none;
-    list-style: none;
+    list-style-type: none;
+    margin: 15rem 0.6rem 0rem 1rem;
     font-family: niagara-engraved, sans-serif;
     font-size: 50pt;
-    margin-right: 0.6rem;
-    margin-top: 15rem;
     text-align: right;
+    padding-right: .5rem;
 }
 
 body.gradientBody {
@@ -57,57 +100,4 @@ body.gradientBody {
 
 .dropdownItems li p {
     padding-left: 3rem;
-}
-
-@media(min-width: 525px) {
-    .dropdownItems {
-        font-size: 1.2rem;
-    }
-}
-
-a,
-a:visited {
-    cursor: pointer;
-    text-decoration: none;
-    color: #BC8B0F;
-}
-
-/********CONTENTWRAPPER **********/
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 10px;
-    grid-row: 6/6;
-    background-color: #26384A;
-    margin-top: 77.5vh;
-}
-
-.introTxt {
-    font-family: niagara-engraved, sans-serif;
-    font-size: 35pt;
-    color: #BC8B0F;
-    width: 80vw;
-    margin-left: 3.2rem;
-}
-
-.tallerken {
-    width: 20vw;
-    height: 10vh;
-    position: absolute;
-    margin-left: 8.5rem;
-    margin-top: -1.3rem;
-}
-
-.menuKnap {
-    border-style: dashed;
-    color: #BC8B0F;
-    position: absolute;
-    width: 48%;
-    height: 8.vh;
-    font-family: niagara-engraved, sans-serif;
-    font-size: 35pt;
-    text-align: center;
-    margin-left: 4.8rem;
-    margin-top: 5rem;
-
 }
