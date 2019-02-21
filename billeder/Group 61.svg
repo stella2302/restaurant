@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185.348" height="68.126" viewBox="0 0 185.348 68.126">
+  <g id="Group_61" data-name="Group 61" transform="translate(-94.471 -856.874)">
+    <g id="Group_54" data-name="Group 54" transform="translate(6 12)">
+      <g id="Group_53" data-name="Group 53" transform="translate(21.471 3.874)">
+        <g id="Rectangle_1493" data-name="Rectangle 1493" transform="translate(76.383 849.434)" fill="none" stroke="#bc8b0f" stroke-width="2" stroke-dasharray="5" opacity="0.49">
+          <rect width="167.531" height="50.206" stroke="none"/>
+          <rect x="1" y="1" width="165.531" height="48.206" fill="none"/>
+        </g>
+        <g id="Rectangle_1494" data-name="Rectangle 1494" transform="translate(67 841)" fill="none" stroke="#bc8b0f" stroke-width="5" stroke-dasharray="5">
+          <rect width="185.348" height="68.126" stroke="none"/>
+          <rect x="2.5" y="2.5" width="180.348" height="63.126" fill="none"/>
+        </g>
+      </g>
+      <text id="MENU" transform="translate(204 891)" fill="#bc8b0f" font-size="35" font-family="NiagaraEngraved-Reg, Niagara Engraved"><tspan x="-44.143" y="0">MENU</tspan></text>
+    </g>
+  </g>
+</svg>

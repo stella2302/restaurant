@@ -6,8 +6,6 @@ html {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    padding: 0;
-    margin: 0;
 }
 
 body {
@@ -29,21 +27,46 @@ body {
 }
 
 .burgerIcon {
-    margin-left: 20.5rem;
-    padding-top: 7rem;
+    margin-left: 21rem;
+    padding-top: 7.3rem;
 }
 
 .logo {
-    margin-top: -100rem;
-    /**det her virker ikke**/
-    width: 50vw;
+    width: 60vw;
     height: 21vh;
-    margin-left: 5.5rem;
+    margin-left: 5rem;
+    position: absolute;
 }
 
+/*********DROPDOWN MENU***********/
+.dropdownItems {
+    margin-top: 3.3rem;
+    margin-left: 1em;
+    display: none;
+    list-style: none;
+    font-family: niagara-engraved, sans-serif;
+    font-size: 50pt;
+    margin-left: 8.8rem;
+}
+
+.dropdownItems li p {
+    padding-left: 3rem;
+}
+
+@media(min-width: 525px) {
+    .dropdownItems {
+        font-size: 1.2rem;
+    }
+}
+
+a,
+a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #BC8B0F;
+}
 
 /********CONTENTWRAPPER **********/
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -54,8 +77,31 @@ body {
 }
 
 .introTxt {
-    font-family: niagara, serif;
+    font-family: niagara-engraved, sans-serif;
     font-size: 35pt;
     color: #BC8B0F;
-    width: 100vw;
+    width: 80vw;
+    margin-left: 3.2rem;
+}
+
+.tallerken {
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    margin-left: 8.5rem;
+    margin-top: 7rem;
+}
+
+.menuKnap {
+    margin-top: 13rem;
+    border-style: dashed;
+    color: #BC8B0F;
+    position: absolute;
+    width: 50%;
+    height: 8.vh;
+    font-family: niagara-engraved, sans-serif;
+    font-size: 35pt;
+    text-align: center;
+    margin-left: 4.5rem;
+
 }
