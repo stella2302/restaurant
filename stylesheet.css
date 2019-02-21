@@ -46,7 +46,13 @@ body {
     list-style: none;
     font-family: niagara-engraved, sans-serif;
     font-size: 50pt;
-    margin-left: 8.8rem;
+    margin-right: 0.6rem;
+    margin-top: 15rem;
+    text-align: right;
+}
+
+body.gradientBody {
+    background-color: rgba(2, 2, 2, 0.75);
 }
 
 .dropdownItems li p {
@@ -89,19 +95,19 @@ a:visited {
     height: 10vh;
     position: absolute;
     margin-left: 8.5rem;
-    margin-top: 7rem;
+    margin-top: -1.3rem;
 }
 
 .menuKnap {
-    margin-top: 13rem;
     border-style: dashed;
     color: #BC8B0F;
     position: absolute;
-    width: 50%;
+    width: 48%;
     height: 8.vh;
     font-family: niagara-engraved, sans-serif;
     font-size: 35pt;
     text-align: center;
-    margin-left: 4.5rem;
+    margin-left: 4.8rem;
+    margin-top: 5rem;
 
 }
