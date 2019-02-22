@@ -8,9 +8,9 @@ var body = document.querySelector("body");
 //EVENTLISTENER ON HAMBURGER ICON
 burgerIcon.addEventListener("click", function () {
     //IF MENU ISNT SHOWN, THEN SHOW
-    if (!(dropdown.style.display == "block")) {
+    if (!(dropdown.style.display == "flex")) {
         console.log("dropdown shown");
-        dropdown.style.display = "block";
+        dropdown.style.display = "flex";
 
         //ADD CLASS "gradientBody" TO BODY
         body.classList.add("gradientBody");

@@ -48,7 +48,8 @@ ul {
 
 
 a,
-a:visited {
+a:visited,
+a:hover {
     cursor: pointer;
     text-decoration: none;
     color: #BC8B0F;
@@ -91,6 +92,10 @@ footer {
     .yesMobileNav {
         display: block;
     }
+
+    .desktopMenu {
+        display: none;
+    }
 }
 
 /***** header ************/
@@ -109,6 +114,7 @@ header {
 .burgerIcon {
     display: block;
     margin: 0 1rem 0 auto;
+    cursor: pointer;
 }
 
 .logo {
@@ -122,11 +128,14 @@ header {
 .dropdownItems {
     display: none;
     list-style-type: none;
-    margin: 15rem 0.6rem 0rem 1rem;
+    /*margin: 15rem 0.6rem 0rem 1rem;*/
     font-family: niagara-engraved, sans-serif;
     font-size: 50pt;
     text-align: right;
-    padding-right: .5rem;
+    padding-right: 1rem;
+    height: 73vh;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 body.gradientBody {
@@ -135,6 +144,10 @@ body.gradientBody {
 
 .dropdownItems li p {
     padding-left: 3rem;
+}
+
+.dropdownItems li:last-of-type {
+    padding-bottom: 2rem;
 }
 
 /************** CONTENT WRAPPER ***************/
@@ -228,42 +241,41 @@ h4 {
 }
 
 /* main content */
-@media screen and (max-width: 768px) {
-    .contentWrapper {
-        display: grid;
-        grid-template-areas: "a b a";
-        margin: 2rem 1.5rem;
-    }
+.contentWrapper {
+    display: grid;
+    grid-template-areas: "a b a";
+    margin: 2rem 1.5rem;
+}
 
-    .contentWrapper .contentRow {
-        border: 3px dashed #BC8B0F;
-        padding: 5px;
-    }
+.contentWrapper .contentRow {
+    border: 3px dashed #BC8B0F;
+    padding: 5px;
+}
 
-    .contentWrapper .innerBorder {
-        border: 1px dashed #BC8B0F;
-        padding: 1rem;
-    }
+.contentWrapper .innerBorder {
+    border: 1px dashed #BC8B0F;
+    padding: 1rem;
+    height: 90%;
+}
 
-    .socialIcons {
-        display: block;
-        margin: -1rem 0 0rem 9rem;
-    }
+.socialIcons {
+    display: block;
+    margin: -1rem 0 0rem 9rem;
+}
 
-    .reservationsKnap {
-        width: 200px;
-        margin: 2rem auto;
-        text-align: center;
-        border: 3px dashed #BC8B0F;
-        padding: 5px;
-        display: block;
-        font-size: 35pt;
-    }
+.reservationsKnap {
+    width: 200px;
+    margin: 2rem auto;
+    text-align: center;
+    border: 3px dashed #BC8B0F;
+    padding: 5px;
+    display: block;
+    font-size: 35pt;
+}
 
-    .reservationsKnap .innerBorder {
-        border: 1px dashed #BC8B0F;
-        padding: 1px;
-    }
+.reservationsKnap .innerBorder {
+    border: 1px dashed #BC8B0F;
+    padding: 1px;
 }
 
 /* start knap */
@@ -279,7 +291,9 @@ h4 {
     background-color: #2E2F39;
     padding: 2rem 1.5rem;
     display: grid;
-    grid-template-areas: "a a";
+    grid-template-areas: "a"
+        "a"
+        "b";
 }
 
 .footer h4 {
@@ -308,4 +322,87 @@ h4 {
 
 .footerSection:last-of-type h4 {
     margin-bottom: .3rem;
+}
+
+.lilleLogo {
+    margin: -80px 0 0 auto;
+}
+
+.lilleLogo img {
+    width: 80px;
+}
+
+/* desktop queries */
+@media screen and (min-width: 768px) {
+
+    .burgerIcon {
+        padding-right: 1rem;
+    }
+
+    .dropdownItems {
+        padding-right: 1.5rem;
+    }
+
+    .contentWrapper {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b c"
+            "d d";
+        margin: 2rem 1.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .reservationsKnap {
+        grid-area: a;
+    }
+
+    .startKnap {
+        grid-area: d;
+        margin-right: 1rem;
+    }
+
+    .contentRow {
+        width: 92%;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .contentRow:first-of-type {
+        grid-area: b;
+    }
+
+    .contentRow:nth-of-type(2) {
+        grid-area: c;
+    }
+}
+
+.desktopMenu {
+    display: grid;
+}
+
+/* Mobile Menu */
+.menuStartKnap {
+    width: 2rem;
+    height: 5vh;
+    margin: -4rem .5rem 1rem auto;
+}
+
+.menuContentWrapper {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "a"
+        "a"
+        "a";
+}
+
+.menuContentWrapper > div {
+    margin: 0 0 1rem 0;
+}
+
+.menuKort img,
+.menuPic img {
+    width: 100%;
 }
