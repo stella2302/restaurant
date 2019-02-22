@@ -93,7 +93,8 @@ footer {
         display: block;
     }
 
-    .desktopMenu {
+    .desktopMenu,
+    .desktopNav {
         display: none;
     }
 }
@@ -348,7 +349,7 @@ h4 {
 
 
 /****** DESKTOP QUERIES *********/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
     .burgerIcon {
         padding-right: 1rem;
@@ -424,6 +425,55 @@ h4 {
         background-position: center;
         background-size: cover;
     }
+
+    .menuItem .overlay h4 {
+        padding: 30% 0 0 0;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    .menuItem .overlay .priceTag {
+        padding-top: 1.5rem;
+        font-family: niagara-engraved, sans-serif;
+        font-size: 30pt;
+        text-align: center;
+        color: white;
+    }
+
+    .menuItem .overlay .beskrivelse {
+        padding: 0 1.5rem;
+        color: #e6d2d2;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .burgerIcon {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        height: 30vh;
+        width: auto;
+        margin: 35vh 4vw 0 auto;
+    }
+
+    .logoLink {
+        display: block;
+    }
+
+    .desktopNav {
+        display: grid;
+        grid-template-areas: "a b c . . . . . . ";
+    }
+
+    .desktopNav a {
+        text-align: center;
+        font-size: 40pt;
+        line-height: 140px;
+    }
 }
 
 /********** MOBILE MENU ***********/
@@ -449,4 +499,28 @@ h4 {
 .menuKort img,
 .menuPic img {
     width: 100%;
+}
+
+
+/*********** HOVER EFFECT ***********/
+
+.menuItem .overlay * {
+    display: none;
+}
+
+.menuItem h4 {
+    margin: 0;
+}
+
+.menuItem .overlay {
+    transition: all .5s;
+    height: 100%;
+}
+
+.menuItem:hover .overlay {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.menuItem:hover .overlay * {
+    display: block;
 }

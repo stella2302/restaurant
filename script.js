@@ -54,7 +54,12 @@ function visRetter(str) {
 function render(str) {
     for (let i = 0; i < mineRetter.length; i++) {
         if (mineRetter[i].kategori === str) {
-            display.innerHTML += `<div id="menuItem${i}" class="menuItem"><h4>${mineRetter[i].titel}</h4><p>${mineRetter[i].beskrivelse}</p><p>${mineRetter[i].pris}</p></div>`;
+            display.innerHTML += `<div id="menuItem${i}" class="menuItem">
+                    <div class="overlay">
+                    <h4>${mineRetter[i].titel}</h4><p class="beskrivelse">${mineRetter[i].beskrivelse}</p>
+                    <p class="priceTag">${mineRetter[i].pris}</p>
+                    </div>
+                </div>`;
 
             document.querySelector("#menuItem" + i).style.backgroundImage = "url('./billeder/" + mineRetter[i].billede + "')";
 
