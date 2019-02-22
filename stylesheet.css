@@ -40,6 +40,11 @@ p {
     margin: 2rem 0.5rem;
 }
 
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
 
 
 a,
@@ -135,7 +140,7 @@ body.gradientBody {
 /************** CONTENT WRAPPER ***************/
 main {
     background-color: #26384A;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 h4 {
@@ -259,4 +264,48 @@ h4 {
         border: 1px dashed #BC8B0F;
         padding: 1px;
     }
+}
+
+/* start knap */
+.startKnap {
+    width: 2rem;
+    height: 5vh;
+    margin: 1.5rem -1rem 0 auto;
+}
+
+/********* FOOTER ***********/
+
+.footer {
+    background-color: #2E2F39;
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-areas: "a a";
+}
+
+.footer h4 {
+    font-size: 26pt;
+    text-align: left;
+    margin: 0;
+}
+
+.footer li {
+    margin-top: .3rem;
+}
+
+.footer li,
+.footer address {
+    font-family: expo-serif-pro, serif;
+}
+
+.footerSection {
+    grid-column: 1/2;
+    margin-bottom: 1.4rem;
+}
+
+.footer address:first-of-type {
+    margin-top: 1.2rem;
+}
+
+.footerSection:last-of-type h4 {
+    margin-bottom: .3rem;
 }
