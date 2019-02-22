@@ -21,23 +21,44 @@ burgerIcon.addEventListener("click", function () {
     }
 });
 
-
+//Naviger i menuen
 
 //HENT DATA FRA JSON
 document.addEventListener("DOMContentLoaded", hentJson);
-
-let display = document.querySelector(".menuGrid");
-let mineRetter = [];
+let menuButtons = document.querySelectorAll(".menuButton")
+let display = document.querySelector(".desktopMenu");
+let mineRetter;
 
 async function hentJson() {
     const myJson = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1k79U13NobDDqXMpGJpzrl9Y8D2hDyh6WUrhENSnA7bc");
     console.log(myJson);
     mineRetter = await myJson.json();
     console.log(mineRetter);
+
+    visRetter("Apéritif");
 }
 
-function visRetter() {
-    for (let i = 0: i < mineRetter.length; i++) {
-        display.innerHTML += ``
+
+menuButtons.forEach(menuButton => {
+    menuButton.addEventListener("click", function () {
+        visRetter(this.innerHTML);
+    });
+});
+
+
+function visRetter(str) {
+    display.innerHTML = "";
+    render(str)
+}
+
+function render(str) {
+    for (let i = 0; i < mineRetter.length; i++) {
+        if (mineRetter[i].kategori === str) {
+            display.innerHTML += `<div id="menuItem${i}" class="menuItem"><h4>${mineRetter[i].titel}</h4><p>${mineRetter[i].beskrivelse}</p><p>${mineRetter[i].pris}</p></div>`;
+
+            document.querySelector("#menuItem" + i).style.backgroundImage = "url('./billeder/" + mineRetter[i].billede + "')";
+
+            console.log(mineRetter[i]);
+        }
     }
 }

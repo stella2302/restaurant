@@ -235,8 +235,12 @@ h4 {
     grid-template-areas: "a a a";
 }
 
-.notMobileNav .menuBorderInner a:nth-of-type(1),
-.notMobileNav .menuBorderInner a:nth-of-type(2) {
+.notMobileNav h5 {
+    margin: 0;
+}
+
+.notMobileNav .menuBorderInner h5:nth-of-type(1),
+.notMobileNav .menuBorderInner h5:nth-of-type(2) {
     border-right: 1px solid #BC8B0F;
 }
 
@@ -291,9 +295,6 @@ h4 {
     background-color: #2E2F39;
     padding: 2rem 1.5rem;
     display: grid;
-    grid-template-areas: "a"
-        "a"
-        "b";
 }
 
 .footer h4 {
@@ -312,7 +313,6 @@ h4 {
 }
 
 .footerSection {
-    grid-column: 1/2;
     margin-bottom: 1.4rem;
 }
 
@@ -332,7 +332,22 @@ h4 {
     width: 80px;
 }
 
-/* desktop queries */
+@media screen and(max-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-areas: "a"
+            "a"
+            "b";
+    }
+
+    .footerSection {
+        grid-column: 1/2;
+        margin-bottom: 1.4rem;
+    }
+}
+
+
+/****** DESKTOP QUERIES *********/
 @media screen and (min-width: 768px) {
 
     .burgerIcon {
@@ -377,24 +392,41 @@ h4 {
         grid-area: c;
     }
 
+
+    /* billede Grid mm. */
     .menuGrid {
-        margin: 2rem;
+        max-width: 1000px;
+        margin: 2rem auto;
         display: grid;
         grid-gap: 2rem;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 30.5%);
         grid-auto-flow: row;
     }
 
     .menuGrid > div {
-        height: 400px;
-        border: 1px solid white;
+        display: inline-block;
+        height: 500px;
+        margin: 1rem;
+    }
+
+
+    .footer {
+        grid-template-columns: repeat(4, 25%);
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    .lilleLogo {
+        margin: -80px -70vw 0 auto;
+    }
+
+    .menuItem {
+        background-position: center;
+        background-size: cover;
     }
 }
 
-
-
-/* Mobile Menu */
+/********** MOBILE MENU ***********/
 .menuStartKnap {
     width: 2rem;
     height: 5vh;
