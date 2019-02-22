@@ -1,7 +1,5 @@
 var dropdown = document.querySelector(".dropdownItems");
-
 var burgerIcon = document.querySelector(".burgerIcon");
-
 var body = document.querySelector("body");
 
 
@@ -22,3 +20,24 @@ burgerIcon.addEventListener("click", function () {
         body.classList.remove("gradientBody");
     }
 });
+
+
+
+//HENT DATA FRA JSON
+document.addEventListener("DOMContentLoaded", hentJson);
+
+let display = document.querySelector(".menuGrid");
+let mineRetter = [];
+
+async function hentJson() {
+    const myJson = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1k79U13NobDDqXMpGJpzrl9Y8D2hDyh6WUrhENSnA7bc");
+    console.log(myJson);
+    mineRetter = await myJson.json();
+    console.log(mineRetter);
+}
+
+function visRetter() {
+    for (let i = 0: i < mineRetter.length; i++) {
+        display.innerHTML += ``
+    }
+}
