@@ -30,7 +30,7 @@ let display = document.querySelector(".desktopMenu");
 let mineRetter;
 
 async function hentJson() {
-    const myJson = await fetch('    chatnoir.json');
+    const myJson = await fetch('chatnoir.json');
     console.log(myJson);
     mineRetter = await myJson.json();
     console.log(mineRetter);
