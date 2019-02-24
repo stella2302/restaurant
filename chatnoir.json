@@ -1,1 +1,65 @@
-[{"titel":"soupe \u00e0 la citrouille","billede":"soup.jpg","beskrivelse":"La soupe chaude et cr\u00e9meuse vient avec du pain et de la cr\u00e8me sure","pris":"129kr","kategori":"Ap\u00e9ritif"},{"titel":"Sauvignon Recette","billede":"sauvignon.jpg","beskrivelse":"rouleau cr\u00e9meux et rafra\u00eechissant","pris":"79kr","kategori":"Ap\u00e9ritif"},{"titel":"soupe \u00e0 l'oignon","billede":"onion.jpg","beskrivelse":"La soupe se compose essentiellement d\u2019oignons et de bouillon de b\u0153uf, utilisez donc le meilleur bouillon que vous puissiez trouver - et si vous en avez le temps, fabriquez le v\u00f4tre","pris":"89kr","kategori":"Ap\u00e9ritif"},{"titel":"Coq au vin","billede":"coqauvin.jpg","beskrivelse":"Le bacon fondu est la base de ce plat \u00e0 la cuisson lente, rempli de champignons, d'oignons perl\u00e9s et d'un d\u00e9licieux poulet \u00e0 la chute.","pris":"145kr","kategori":"Entr\u00e9e"},{"titel":"Bouillabasse","billede":"seafood.jpg","beskrivelse":"Cette recette fait appel au poisson blanc et aux crevettes, mais n'h\u00e9sitez pas \u00e0 utiliser le type de poisson que vous souhaitez. Les moules, les palourdes ou m\u00eame les langoustines sont d\u00e9finitivement les bienvenues.","pris":"185kr","kategori":"Entr\u00e9e"},{"titel":"d'hu\u00eetres","billede":"oyster.jpg","beskrivelse":"hu\u00eetres d\u00e9licieuses gluantes","pris":"205kr","kategori":"Entr\u00e9e"},{"titel":"Clafutis","billede":"clafutis.jpg","beskrivelse":"G\u00e2teau fran\u00e7ais \u00e0 l'envers","pris":"55kr","kategori":"Dessert"},{"titel":"mousse au chocolat","billede":"mousse.jpg","beskrivelse":"cr\u00e9meux, chocolat \u00e9pais","pris":"55kr","kategori":"Dessert"},{"titel":"Tiramisu","billede":"tiramisu.jpg","beskrivelse":"d\u00e9licieux g\u00e2teau au go\u00fbt de caf\u00e9","pris":"65kr","kategori":"Dessert"}]
+{
+  "soupe à la citrouille": {
+    "Titel": "soupe à la citrouille",
+    "billede": "soup.jpg",
+    "beskrivelse": "La soupe chaude et crémeuse vient avec du pain et de la crème sure",
+    "pris": 129,
+    "kategori": "Apéritif"
+  },
+  "Sauvignon Recette": {
+    "Titel": "Sauvignon Recette",
+    "billede": "sauvignon.jpg",
+    "beskrivelse": "rouleau crémeux et rafraîchissant",
+    "pris": 79,
+    "kategori": "Apéritif"
+  },
+  "soupe à l'oignon": {
+    "Titel": "soupe à l'oignon",
+    "billede": "onion.jpg",
+    "beskrivelse": "La soupe se compose essentiellement d’oignons et de bouillon de bœuf, utilisez donc le meilleur bouillon que vous puissiez trouver - et si vous en avez le temps, fabriquez le vôtre",
+    "pris": 89,
+    "kategori": "Apéritif"
+  },
+  "Coq au vin": {
+    "Titel": "Coq au vin",
+    "billede": "coqauvin.jpg",
+    "beskrivelse": "Le bacon fondu est la base de ce plat à la cuisson lente, rempli de champignons, d'oignons perlés et d'un délicieux poulet à la chute.",
+    "pris": 145,
+    "kategori": "Entrée"
+  },
+  "Bouillabasse": {
+    "Titel": "Bouillabasse",
+    "billede": "seafood.jpg",
+    "beskrivelse": "Cette recette fait appel au poisson blanc et aux crevettes, mais n'hésitez pas à utiliser le type de poisson que vous souhaitez. Les moules, les palourdes ou même les langoustines sont définitivement les bienvenues.",
+    "pris": 185,
+    "kategori": "Entrée"
+  },
+  "d'huîtres": {
+    "Titel": "d'huîtres",
+    "billede": "oyster.jpg",
+    "beskrivelse": "huîtres délicieuses gluantes",
+    "pris": 205,
+    "kategori": "Entrée"
+  },
+  "Clafutis": {
+    "Titel": "Clafutis",
+    "billede": "clafutis.jpg",
+    "beskrivelse": "Gâteau français à l'envers",
+    "pris": 55,
+    "kategori": "Dessert"
+  },
+  "mousse au chocolat": {
+    "Titel": "mousse au chocolat",
+    "billede": "mousse.jpg",
+    "beskrivelse": "crémeux, chocolat épais",
+    "pris": 55,
+    "kategori": "Dessert"
+  },
+  "Tiramisu": {
+    "Titel": "Tiramisu",
+    "billede": "tiramisu.jpg",
+    "beskrivelse": "délicieux gâteau au goût de café",
+    "pris": 65,
+    "kategori": "Dessert"
+  }
+}
