@@ -287,7 +287,6 @@ h4 {
 .startKnap {
     width: 2rem;
     height: 5vh;
-    margin: 1.5rem -1rem 0 auto;
 }
 
 /********* FOOTER ***********/
@@ -298,10 +297,15 @@ h4 {
     display: grid;
 }
 
+.footerBox {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
 .footer h4 {
-    font-size: 26pt;
+    font-size: 30pt;
     text-align: left;
-    margin: 0;
+    margin: 0 0 1.5rem 0;
 }
 
 .footer li {
@@ -315,6 +319,10 @@ h4 {
 
 .footerSection {
     margin-bottom: 1.4rem;
+}
+
+.footerSection p {
+    margin: 0;
 }
 
 .footer address:first-of-type {
@@ -333,7 +341,7 @@ h4 {
     width: 80px;
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer {
         display: grid;
         grid-template-areas: "a"
@@ -344,6 +352,10 @@ h4 {
     .footerSection {
         grid-column: 1/2;
         margin-bottom: 1.4rem;
+    }
+
+    .startKnap {
+        margin: 1.5rem .3rem 0 auto;
     }
 }
 
@@ -376,7 +388,7 @@ h4 {
 
     .startKnap {
         grid-area: d;
-        margin-right: 1rem;
+        margin: 1.5rem 0.3rem 0 auto;
     }
 
     .contentRow {
@@ -411,14 +423,14 @@ h4 {
     }
 
 
-    .footer {
+    .footerBox {
         grid-template-columns: repeat(4, 25%);
         display: grid;
         grid-gap: 1rem;
     }
 
     .lilleLogo {
-        margin: -80px -70vw 0 auto;
+        margin: -80px 0 0 auto;
     }
 
     .menuItem {
@@ -457,7 +469,7 @@ h4 {
         display: block;
         height: 30vh;
         width: auto;
-        margin: 35vh 4vw 0 auto;
+        margin: 25vh 8vw 0 auto;
     }
 
     .logoLink {
@@ -473,6 +485,12 @@ h4 {
         text-align: center;
         font-size: 40pt;
         line-height: 140px;
+    }
+
+    .menuButton:hover,
+    a:hover {
+        color: #ddcc4f;
+        cursor: pointer;
     }
 }
 
